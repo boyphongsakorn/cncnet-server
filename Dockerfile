@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM jrei/systemd-ubuntu:latest
 
 WORKDIR /app
 
