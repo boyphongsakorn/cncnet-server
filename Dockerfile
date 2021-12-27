@@ -2,7 +2,7 @@ FROM ubuntu
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y wget default-jre 
+RUN apt-get update && apt-get install -y wget
 
 RUN wget downloads.cncnet.org/tunnel.sh
 CMD sh tunnel.sh 200 "Unnamed Server"
