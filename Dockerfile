@@ -4,6 +4,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y wget default-jre 
 
-RUN wget -c https://downloads.cncnet.org/cncnet-server-core.tgz -O - | tar -xz
+RUN wget downloads.cncnet.org/tunnel.sh
+CMD sh tunnel.sh 200 "Unnamed Server"
 
-ENTRYPOINT ["./cncnet-server-core"]
+#ENTRYPOINT ["./cncnet-server-core"]
