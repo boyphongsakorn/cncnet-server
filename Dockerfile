@@ -1,4 +1,4 @@
-FROM jrei/systemd-ubuntu
+FROM jrei/systemd-ubuntu:18.04
 
 WORKDIR /app
 
